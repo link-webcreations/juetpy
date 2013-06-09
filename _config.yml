@@ -15,5 +15,5 @@ permalink: pretty
 exclude: ["README.md", "CNAME"]
 
 # Server
-url: http://link-webcreations.github.io/juetpy/
+url: http://link-webcreations.github.io/juetpy
 # production_url: http://juetpy.link-webcreations.fr
