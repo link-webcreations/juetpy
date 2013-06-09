@@ -5,14 +5,14 @@ auto: true
 lang: fr
 
 # Dependencies
-markdown:     rdiscount
-pygments:     true
+markdown: rdiscount
+pygments: true
 
 # Permalinks
-permalink:    pretty
+permalink: pretty
 
 # Files to exclude
 exclude: ["README.md", "CNAME"]
 
 # Server
-# production_url : http://juetpy.link-webcreations.fr
+# production_url: http://juetpy.link-webcreations.fr
