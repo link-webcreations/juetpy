@@ -9,10 +9,11 @@ markdown: rdiscount
 pygments: true
 
 # Permalinks
-permalink: /blog/:categories/:year/:month/:day/:title/
+permalink: pretty
 
 # Files to exclude
 exclude: ["README.md", "CNAME"]
 
 # Server
+url: http://link-webcreations.github.io/juetpy/
 # production_url: http://juetpy.link-webcreations.fr
