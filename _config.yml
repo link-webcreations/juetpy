@@ -9,7 +9,7 @@ pygments:     true
 permalink:    pretty
 
 # Files to exclude
-exclude: ["README.md"]
+exclude: ["README.md", "CNAME"]
 
 # Server
 production_url : http://juetpy.link-webcreations.fr
