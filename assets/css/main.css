@@ -4,7 +4,6 @@
   =========================================================================== */
 
 
-
 /* Body and structure
 -------------------------------------------------- */
 body {
@@ -13,6 +12,7 @@ body {
 section {
   padding-top: 50px;
 }
+
 .footer {
   padding: 60px 20px;
   color: #999;
@@ -31,6 +31,11 @@ section {
 .footer p {
   color: #7a7a7a;
   text-align: center;
+}
+
+/* Hide the top link initially */
+.top {
+  display: none;
 }
 
 
@@ -169,6 +174,26 @@ section {
 
 @media (min-width: 768px) {
 
+  /* Back to top link */
+  .top {
+    display: block; /* Unhide */
+    float: left;
+    padding: 7px 15px;
+    font-weight: 500;
+    color: #999;
+    background-color: #eee;
+    border-radius: 4px;
+  }
+  .top:hover {
+    color: #fff;
+    text-decoration: none;
+    background-color: #999;
+  }
+  .top.affix {
+    position: fixed;
+    right:  15px;
+    bottom: 15px;
+  }
   /* Scale up images in carousel */
   .carousel-inner > .item {
     height: 600px;
