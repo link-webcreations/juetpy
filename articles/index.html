@@ -15,7 +15,7 @@ slug: articles
     {% for post in site.posts %}
     <li class="media">
       <div class="pull-right">
-        <p>Le {{ page.date | date: "%d/%m/%Y" }}</p>
+        <p>Le {{ post.date | date: "%d/%m/%Y" }}</p>
       </div>
       <div class="media-body">
         <a href="{{ site.url }}{{ post.url }}">
