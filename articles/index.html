@@ -1,0 +1,19 @@
+---
+title: "Articles"
+layout: post
+slug: articles
+---
+<!-- articles
+================================================== -->
+<section>
+  <div class="page-header">
+    <h1><a href="{{ page.url }}" >{{ page.title }}</a></h1>
+    <p class="lead">Le {{ page.date | date: "%d/%m/%Y" }}
+      {% if page.tags %} 
+      dans <strong>{{ page.tags }}</strong>
+      {% endif %}
+    </p>
+
+    {{ content | markdownify }}
+    
+</section>
