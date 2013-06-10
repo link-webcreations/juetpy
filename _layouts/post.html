@@ -8,9 +8,10 @@ layout: default
     <h1><a href="{{ page.url }}" >{{ page.title }}</a></h1>
     <p class="lead">Le {{ page.date | date: "%d/%m/%Y" }}
       {% if page.tags %} 
-      dans <strong>{{ page.tags }}</strong>
+      dans <em>{{ page.tags }}</em>
       {% endif %}
     </p>
+  </div>
     
     {{ content | markdownify }}
     

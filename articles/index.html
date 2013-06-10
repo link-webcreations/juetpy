@@ -1,20 +1,26 @@
 ---
-title: "Articles"
+title: "Voyagez avec nous !"
 layout: default
 slug: articles
 ---
 <!-- articles
 ================================================== -->
 <section>
-  <ul>
+  <div class="page-header">
+    <h1>{{ page.title }}</a></h1>
+    <p class="lead">Liste des articles présents sur le site</p>
+  </div>
+  
+  <dl>
     {% for post in site.posts %}
-    
-    <li>
+    <dt>
       <a href="{{ site.url }}{{ post.url }}">
         <h3>{{ post.title }}</h3>
       </a>
-    </li>
-    
+    </dt>
+    <dd>
+      <p>ici mettre la desription, comment automatiser ça ?</p>
+    </dd>
     {% endfor %}
-  </ul>
+  </dl>
 </section>

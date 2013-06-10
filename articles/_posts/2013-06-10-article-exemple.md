@@ -1,5 +1,5 @@
 ---
-title: "article exemple"
+title: "Premier exemple d'article"
 layout: post
 tags: [chili, cuisine, incas]
 ---
