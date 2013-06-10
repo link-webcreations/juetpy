@@ -18,7 +18,7 @@ slug: articles
         <a href="{{ site.url }}{{ post.url }}">
           <h4 class="media-heading">{{ post.title }}</h4>
         </a>
-        {{ post.excerpt }}
+        {{ post.excerpt | markdownify}}
       </div>
     </li>
     {% endfor %}
