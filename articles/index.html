@@ -28,13 +28,17 @@ slug:   articles
   </ul>
   
   <ul class="pager">
-    {% if paginator.total_pages > 1 %}{% if paginator.previous_page %}
-    {% if paginator.previous_page == 1 %}<li class="previous disabled"><a href="#">&larr; Précédent</a></li>
-    {% else %}<li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Précédent</a></li>{% endif %}
-    {% endif %}{% endif %}
-    {% if paginator.total_pages > 1 %}{% if paginator.next_page and paginator.total_pages > 1 %}
-    <li class="next"><a href="/page{{ paginator.next_page }}">Suivant &rarr;</a></li>
-    {% endif %}{% endif %}
-  </li>
+    {% if paginator.previous_page %}
+      <li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Précédent</a></li>
+    {% else %}
+      <li class="previous disabled"><a href="#">&larr; Précédent</a></li>
+    {% endif %}
+    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+    {% if paginator.next_page %}
+      <li class="next"><a href="/page{{ paginator.next_page }}">Suivant &rarr;</a></li>
+    {% else %}
+      <li class="next disabled"><a href="/page{{ paginator.next_page }}">Suivant &rarr;</a></li>
+    {% endif %}
+  </ul>
 
 </section>
