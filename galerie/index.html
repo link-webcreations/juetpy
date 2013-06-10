@@ -1,0 +1,30 @@
+---
+title:  Galerie photo
+layout: default
+slug:   galerie
+---
+<!-- articles
+================================================== -->
+<section>
+  <div class="page-header">
+    <h1>{{ page.title }}</a></h1>
+    <p class="lead">SOOoo nice cette galerie</p>
+  </div>
+  
+  <ul class="media-list">
+    {% for post in site.posts %}
+    <li class="media">
+      <div class="pull-right">
+        <p>Le {{ post.date | date: "%d/%m/%Y" }}</p>
+      </div>
+      <div class="media-body">
+        <a href="{{ site.url }}{{ post.url }}">
+          <h3 class="media-heading">{{ post.title }}</h3>
+        </a>
+        {{ post.excerpt }}
+      </div>
+    </li>
+    {% endfor %}
+  </ul>
+
+</section>
