@@ -1,7 +1,8 @@
 ---
-title: Premier exemple d'article
-layout: post
-excerpt: Description qui apparaîtra dans la liste
+title:    Premier exemple d'article
+layout:   post
+slug:     articles
+excerpt:  Description qui apparaîtra dans la liste
 tags:
 - tag1
 - tag2

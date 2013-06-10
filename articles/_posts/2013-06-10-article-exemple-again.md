@@ -1,7 +1,8 @@
 ---
-title: Un second test
-layout: post
-excerpt: Descriiiiiiiibe
+title:    Un second test
+layout:   post
+slug:     articles
+excerpt:  Descriiiiiiiibe
 tags:
 - tag2-1
 - tag2-2
