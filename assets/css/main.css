@@ -34,16 +34,9 @@ body {
  */
 
 .footer {
-  padding: 60px 20px;
+  padding: 30px 20px;
   color: #999;
   background-color: #282a2b;
-}
-.footer ul {
-  margin-bottom: 30px;
-}
-.footer li {
-  padding-top: 5px;
-  padding-bottom: 5px;
 }
 .footer a {
   color: #fff;
