@@ -1,7 +1,11 @@
 ---
 title: "Premier exemple d'article"
 layout: post
-tags: [chili, cuisine, incas]
+excerpt: "Description qui apparaîtra dans la liste"
+tags:
+- chili
+- cuisine
+- incas
 ---
 
 Gros titre
