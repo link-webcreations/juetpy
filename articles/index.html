@@ -12,7 +12,7 @@ slug:   articles
   </div>
   
   <ul class="media-list">
-    {% for post in site.posts %}
+    {% for post in paginator.posts %}
     <li class="media">
       <div class="pull-right">
         <p>Le {{ post.date | date: "%d/%m/%Y" }}</p>
