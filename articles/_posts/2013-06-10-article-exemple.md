@@ -1,7 +1,6 @@
 ---
 title: "article exemple"
 layout: post
-slug: articles
 tags: [chili, cuisine, incas]
 ---
 
