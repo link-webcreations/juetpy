@@ -3,25 +3,28 @@
 # ----------------------- #
 
 # production_url: http://juetpy.link-webcreations.fr
-url: http://link-webcreations.github.io/juetpy
-author: Yves ANDOLFATTO
-description: Blog du Voyage en amérique du sud
+url:          http://link-webcreations.github.io/juetpy
+author:       Yves ANDOLFATTO
+description:  Blog du Voyage en amérique du sud
 
 # ----------------------- #
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-auto: true
-lang: fr
-permalink: pretty
-markdown: rdiscount
-pygments: true
-exclude: ["README.md", "CNAME"]
+auto:           true
+lang:           fr
+permalink:      pretty
+markdown:       rdiscount
+pygments:       true
+exclude:        ["README.md", "CNAME"]
+paginate:       5
+#paginate_path:  "articles/page:num"
 
 # ----------------------- #
 #   3rd Party Settings    #
 # ----------------------- #
 
-disqus_short_name:
-disqus_show_comment_count: false
+disqus_short_name:            
+disqus_show_comment_count:    false
+
 google_analytics_tracking_id: UA-XXXXX-X
