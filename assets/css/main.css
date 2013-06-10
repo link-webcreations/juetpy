@@ -4,14 +4,21 @@
   =========================================================================== */
 
 
-/* Body and structure
--------------------------------------------------- */
+/*
+ * Body and structure
+ */
+
 body {
   font-family: Ubuntu;
 }
 section {
   padding-top: 50px;
 }
+
+
+/*
+ * Customize the footer
+ */
 
 .footer {
   padding: 60px 20px;
@@ -33,11 +40,6 @@ section {
   text-align: center;
 }
 
-/* Hide the top link initially */
-.to-top {
-  display: none;
-}
-
 
 /*
  * Customize the default button styles
@@ -46,7 +48,6 @@ section {
 .btn {
   text-transform: uppercase;
 }
-
 .btn,
 .btn:hover,
 .btn:active {
@@ -95,12 +96,10 @@ section {
   left: 0;
   box-shadow: 0 0 10px rgba(0,0,0,.25);
 }
-
 .navbar .btn {
   float: right;
   margin-top: 8px;
 }
-
 .navbar-brand {
   color: #b94a48;
 }
@@ -143,6 +142,7 @@ section {
   display: none; /* Hide to start, but show it when we have the space */
 }
 
+
 /*
  * Create a brand new component
  */
@@ -172,28 +172,9 @@ section {
  * Responsively scale things up
  */
 
+ 
 @media (min-width: 768px) {
 
-  /* Back to top link */
-  .to-top {
-    display: block; /* Unhide */
-    float: left;
-    padding: 7px 15px;
-    font-weight: 500;
-    color: #999;
-    background-color: #eee;
-    border-radius: 4px;
-  }
-  .to-top:hover {
-    color: #fff;
-    text-decoration: none;
-    background-color: #999;
-  }
-  .to-top.affix {
-    position: fixed;
-    right:  15px;
-    bottom: 15px;
-  }
   /* Scale up images in carousel */
   .carousel-inner > .item {
     height: 600px;
