@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+  {% include header.html %}
+</head>
+<body>
+{% include nav-main.html %}
+
+<h3><a href="{{ page.url }}" >{{ page.title }}</a></h3>
+<div>Le <strong>{{ page.date | date: "%d/%m/%Y" }}</strong>
+  {% if page.tags %} 
+  dans <strong>{{ page.tags }}</strong>
+  {% endif %}
+</div>
+
+{{ content }}
+
+{% include footer.html %}
+
+{% include js.html %}
+{% include google_analytics.html %}
+{% include disqus.html %}
+</body>
+</html>
