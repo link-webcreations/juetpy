@@ -1,19 +1,28 @@
-# Misc
+# ----------------------- #
+#      Main Configs       #
+# ----------------------- #
+
+# production_url: http://juetpy.link-webcreations.fr
+url: http://link-webcreations.github.io/juetpy
+title: &middot; JuEtPy
+author: Yves ANDOLFATTO
+description: Blog du Voyage en amérique du sud
+
+# ----------------------- #
+#    Jekyll & Plugins     #
+# ----------------------- #
+
 auto: true
-
-# Language
 lang: fr
-
-# Dependencies
+permalink: pretty
 markdown: rdiscount
 pygments: true
-
-# Permalinks
-permalink: pretty
-
-# Files to exclude
 exclude: ["README.md", "CNAME"]
 
-# Server
-url: http://link-webcreations.github.io/juetpy
-# production_url: http://juetpy.link-webcreations.fr
+# ----------------------- #
+#   3rd Party Settings    #
+# ----------------------- #
+
+disqus_short_name:
+disqus_show_comment_count: false
+google_analytics_tracking_id: UA-XXXXX-X

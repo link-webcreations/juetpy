@@ -3,21 +3,15 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
-  <head>
-    <!-- Meta, title, CSS, favicons, etc. -->
-    {% include header.html %}
-    <!-- Place anything custom after this. -->
-  </head>
-  <body>
+<head>
+  {% include header.html %}
+</head>
+<body>
+{{ content }}
+  
+{% include footer.html %}
 
-    <!-- Page content of course! -->
-    {{ content }}
-    
-    <!-- Main docs footer (social buttons, copyright, etc). -->
-    {% include colophon.html %}
-
-    <!-- JS and analytics only. -->
-    {% include footer.html %}
-
-  </body>
+{% include js.html %}
+{% include google_analytics.html %}
+</body>
 </html>
