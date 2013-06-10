@@ -1,11 +1,13 @@
 ---
-title: "Premier exemple d'article"
+title: Premier exemple d'article
 layout: post
-excerpt: "Description qui apparaîtra dans la liste"
+excerpt: Description qui apparaîtra dans la liste
 tags:
-- chili
-- cuisine
-- incas
+- tag1
+- tag2
+- tag3
+categories:
+- categorietest1
 ---
 
 Gros titre
