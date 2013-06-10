@@ -1,4 +1,4 @@
-juetpy
+juetpy [![Build Status](https://secure.travis-ci.org/link-webcreations/juetpy.png)](http://travis-ci.org/link-webcreations/juetpy)
 ======
 
 Website about travel in south america. Using Jekyll
