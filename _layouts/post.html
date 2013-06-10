@@ -9,14 +9,24 @@
 <body>
 {% include nav-main.html %}
 
-<h3><a href="{{ page.url }}" >{{ page.title }}</a></h3>
-<div>Le <strong>{{ page.date | date: "%d/%m/%Y" }}</strong>
-  {% if page.tags %} 
-  dans <strong>{{ page.tags }}</strong>
-  {% endif %}
-</div>
+<div class="container">
 
-{{ content }}
+<!-- articles
+================================================== -->
+<section>
+  <div class="page-header">
+    <h1><a href="{{ page.url }}" >{{ page.title }}</a></h1>
+    <p class="lead">Le {{ page.date | date: "%d/%m/%Y" }}
+      {% if page.tags %} 
+      dans <strong>{{ page.tags }}</strong>
+      {% endif %}
+    </p>
+
+    {{ content }}
+    
+</section>
+
+</div>
 
 {% include footer.html %}
 
