@@ -18,7 +18,6 @@ Sous-titre
 ----------
 
 - Liste
-
 - Liste
 
 Paragraphe Paragraphe Paragraphe Paragraphe
