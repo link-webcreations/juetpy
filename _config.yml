@@ -21,7 +21,6 @@ exclude:        ["README.md", "CNAME"]
 #   3rd Party Settings    #
 # ----------------------- #
 
-disqus_short_name:            juetpy
-disqus_show_comment_count:    false
+disqus_shortname: juetpy
 
 google_analytics_tracking_id: UA-XXXXX-X
