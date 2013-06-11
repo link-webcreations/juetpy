@@ -1,4 +1,8 @@
+{% if page.slug == "home" %}
+<div class="navbar" data-spy="affix" data-offset-top="600">
+{% else %}
 <div class="navbar navbar-fixed-top"  id="top">
+{% endif %}
   <div class="container">
     <a href="{{ site.url }}/" class="navbar-brand">YOOOO</a>
     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".nav-collapse">
@@ -13,9 +17,6 @@
         </li>
         <li{% if page.slug == "articles" %} class="active"{% endif %}>
           <a href="{{ site.url }}/articles">Articles</a>
-        </li>
-        <li{% if page.slug == "galerie" %} class="active"{% endif %}>
-          <a href="{{ site.url }}/galerie">Galerie</a>
         </li>
       </ul>
     </div>

@@ -2,8 +2,7 @@
 #      Main Configs       #
 # ----------------------- #
 
-# production_url: http://juetpy.link-webcreations.fr
-url:          http://link-webcreations.github.io/juetpy
+#url:          http://link-webcreations.github.io/juetpy
 author:       Yves ANDOLFATTO
 description:  Blog du Voyage en amérique du sud
 
@@ -11,14 +10,12 @@ description:  Blog du Voyage en amérique du sud
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-auto:           true
+#auto:           true
 lang:           fr
-permalink:      pretty
+#permalink:      pretty
 markdown:       rdiscount
-pygments:       true
+#pygments:       true
 exclude:        ["README.md", "CNAME"]
-paginate:       5
-paginate_path:  "articles/page:num"
 
 # ----------------------- #
 #   3rd Party Settings    #
