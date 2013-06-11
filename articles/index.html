@@ -3,33 +3,50 @@ title:  Voyagez avec nous !
 layout: default
 slug:   articles
 ---
-<!-- articles
-================================================== -->
-<section>
-  <div class="page-header">
-    <h1>{{ page.title }}</a></h1>
-    <p class="lead">Liste des articles présents sur le site</p>
-  </div>
-  
-  {% for post in site.posts limit:5 %}
-  <div>
-  <div class="content">
-  {% include listed-post.html %}
-  </div>
-  {% endfor %}
-  
-  <ul class="pager">
-    {% if paginator.previous_page %}
-      <li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Précédent</a></li>
-    {% else %}
-      <li class="previous disabled"><a href="#">&larr; Précédent</a></li>
-    {% endif %}
-    <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-    {% if paginator.next_page %}
-      <li class="next"><a href="/page{{ paginator.next_page }}">Suivant &rarr;</a></li>
-    {% else %}
-      <li class="next disabled"><a href="#">Suivant &rarr;</a></li>
-    {% endif %}
-  </ul>
+<div class="container bs-docs-container">
+  <div class="row">
+    <div class="col col-lg-3">
+      <div class="bs-sidebar">
+        <ul class="nav bs-sidenav">
+          {% for post in site.posts %}
+          <li>
+            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
+          </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+    <div class="col col-lg-9">
+      <!-- articles
+      ================================================== -->
+      <section>
+        <div class="page-header">
+          <h1>{{ page.title }}</a></h1>
+          <p class="lead">Liste des articles présents sur le site</p>
+        </div>
+        
+        {% for post in site.posts limit:5 %}
+        <div>
+        <div class="content">
+        {% include listed-post.html %}
+        </div>
+        {% endfor %}
+        
+        <ul class="pager">
+          {% if paginator.previous_page %}
+            <li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Précédent</a></li>
+          {% else %}
+            <li class="previous disabled"><a href="#">&larr; Précédent</a></li>
+          {% endif %}
+          <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+          {% if paginator.next_page %}
+            <li class="next"><a href="/page{{ paginator.next_page }}">Suivant &rarr;</a></li>
+          {% else %}
+            <li class="next disabled"><a href="#">Suivant &rarr;</a></li>
+          {% endif %}
+        </ul>
 
-</section>
+      </section>
+    </div>
+  </div>
+</div>

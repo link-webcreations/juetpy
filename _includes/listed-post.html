@@ -2,5 +2,5 @@
 <div datetime="{{ post.date | date: "%d/%m/%Y" }}">
   <p>Le {{ post.date | date: "%d/%m/%Y" }}</p>
 </div>
-<div class="body">{% include nav-sub.html %}</div>
+<div>{{ post.content }}</div>
 <div class="breaker"></div>
