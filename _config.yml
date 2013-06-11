@@ -11,6 +11,7 @@ description:  Blog du Voyage en amérique du sud
 # ----------------------- #
 
 #permalink:      pretty
+paginate:       5
 markdown:       rdiscount
 pygments:       true
 exclude:        ["README.md", "CNAME"]
