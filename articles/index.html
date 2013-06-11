@@ -3,11 +3,11 @@ title:  Voyagez avec nous !
 layout: default
 slug:   articles
 ---
-<div class="container bs-docs-container">
+<div class="container">
   <div class="row">
     <div class="col col-lg-3">
-      <div class="bs-sidebar">
-        <ul class="nav bs-sidenav">
+      <div class="sidebar">
+        <ul class="nav sidenav">
           {% for post in site.posts %}
           <li>
             <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
@@ -17,19 +17,19 @@ slug:   articles
       </div>
     </div>
     <div class="col col-lg-9">
-      <!-- articles
-      ================================================== -->
-      <section>
+      <header>
         <div class="page-header">
-          <h1>{{ page.title }}</a></h1>
+          <h1>{{ page.title }}</h1>
           <p class="lead">Les articles</p>
         </div>
-        
+      </header>
+      <div class="container">        
         {% for post in site.posts limit:5 %}
-        <div>
-        <div class="content">
+        <!-- articles
+        ================================================== -->
+        <section>
         {% include listed-post.html %}
-        </div>
+        </section>
         {% endfor %}
         
         <ul class="pager">
@@ -46,7 +46,7 @@ slug:   articles
           {% endif %}
         </ul>
 
-      </section>
+      </div>
     </div>
   </div>
 </div>
