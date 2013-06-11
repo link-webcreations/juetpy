@@ -1,52 +1,26 @@
 ---
 title:  Voyagez avec nous !
-layout: default
+layout: sidebar
 slug:   articles
 ---
-<div class="container">
-  <div class="row">
-    <div class="col col-lg-3">
-      <div class="sidebar">
-        <ul class="nav sidenav">
-          {% for post in site.posts %}
-          <li>
-            <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-          </li>
-          {% endfor %}
-        </ul>
-      </div>
-    </div>
-    <div class="col col-lg-9">
-      <header>
-        <div class="page-header">
-          <h1>{{ page.title }}</h1>
-          <p class="lead">Les articles</p>
-        </div>
-      </header>
-      <div class="container">        
-        {% for post in site.posts limit:5 %}
-        <!-- articles
-        ================================================== -->
-        <section>
-        {% include listed-post.html %}
-        </section>
-        {% endfor %}
-        
-        <ul class="pager">
-          {% if paginator.previous_page %}
-            <li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Précédent</a></li>
-          {% else %}
-            <li class="previous disabled"><a href="#">&larr; Précédent</a></li>
-          {% endif %}
-          <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-          {% if paginator.next_page %}
-            <li class="next"><a href="/page{{ paginator.next_page }}">Suivant &rarr;</a></li>
-          {% else %}
-            <li class="next disabled"><a href="#">Suivant &rarr;</a></li>
-          {% endif %}
-        </ul>
+{% for post in site.posts limit:5 %}
+<!-- articles
+================================================== -->
+<section>
+{% include listed-post.html %}
+</section>
+{% endfor %}
 
-      </div>
-    </div>
-  </div>
-</div>
+<ul class="pager">
+  {% if paginator.previous_page %}
+    <li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Précédent</a></li>
+  {% else %}
+    <li class="previous disabled"><a href="#">&larr; Précédent</a></li>
+  {% endif %}
+  <span class="page_number ">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
+  {% if paginator.next_page %}
+    <li class="next"><a href="/page{{ paginator.next_page }}">Suivant &rarr;</a></li>
+  {% else %}
+    <li class="next disabled"><a href="#">Suivant &rarr;</a></li>
+  {% endif %}
+</ul>
