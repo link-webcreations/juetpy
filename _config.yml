@@ -10,11 +10,9 @@ description:  Blog du Voyage en amérique du sud
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-#auto:           true
-lang:           fr
 #permalink:      pretty
 markdown:       rdiscount
-#pygments:       true
+pygments:       true
 exclude:        ["README.md", "CNAME"]
 
 # ----------------------- #
