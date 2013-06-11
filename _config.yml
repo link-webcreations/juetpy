@@ -5,6 +5,7 @@
 url:          http://link-webcreations.github.io/juetpy
 author:       Yves ANDOLFATTO
 description:  Blog du Voyage en amérique du sud
+safe:         false
 
 # ----------------------- #
 #    Jekyll & Plugins     #
