@@ -3,6 +3,7 @@ title:  Voyagez avec nous !
 layout: default
 slug:   articles
 ---
+{% include nav-sub.html %}
 <!-- articles
 ================================================== -->
 <section>
@@ -10,23 +11,6 @@ slug:   articles
     <h1>{{ page.title }}</a></h1>
     <p class="lead">Liste des articles présents sur le site</p>
   </div>
-  
-  <ul class="media-list">
-    {% for post in site.posts %}
-    <li class="media">
-      <div class="pull-right">
-        <p>Le {{ post.date | date: "%d/%m/%Y" }}</p>
-      </div>
-      <div class="media-body">
-        <a href="{{ site.url }}{{ post.url }}">
-          <h3 class="media-heading">{{ post.title }}</h3>
-        </a>
-        {{ post.excerpt }}
-      </div>
-    </li>
-    {% endfor %}
-  </ul>
-  
   
   {% for post in site.posts limit:5 %}
   <div>
