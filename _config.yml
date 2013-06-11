@@ -15,7 +15,7 @@ paginate:       5
 paginate_file:  articles.html
 markdown:       rdiscount
 pygments:       true
-exclude:        ["README.md", "CNAME"]
+exclude:        ["README.md", "CNAME", ".gitignore"]
 
 # ----------------------- #
 #   3rd Party Settings    #
