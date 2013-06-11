@@ -8,11 +8,11 @@ layout: sidebar
     <h1><a href="{{ site.url }}{{ page.url }}" >{{ page.title }}</a></h1>
     <p class="lead">Le {{ page.date | date: "%d/%m/%Y" }}
       {% if page.tags %} 
-      dans <em>{{ page.tags }}</em>
+      dans <em>{{ page.categories }}</em>
       {% endif %}
     </p>
   </div>
     
   {{ content }}
     
-</section>
+</section><!-- /post -->
