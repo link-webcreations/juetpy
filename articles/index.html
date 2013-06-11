@@ -27,6 +27,14 @@ slug:   articles
     {% endfor %}
   </ul>
   
+  
+  {% for post in site.posts limit:5 %}
+  <div>
+  <div class="content">
+  {% include listed-post.html %}
+  </div>
+  {% endfor %}
+  
   <ul class="pager">
     {% if paginator.previous_page %}
       <li class="previous"><a href="/page{{ paginator.previous_page }}">&larr; Précédent</a></li>
