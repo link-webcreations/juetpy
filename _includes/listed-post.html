@@ -1,8 +1,9 @@
-<div class="page-header">
-  <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
-  <p class="lead" datetime="{{ post.date | date: "%d/%m/%Y" }}"><p>Le {{ post.date | date: "%d/%m/%Y" }}</p>
-</div>
-<div>
-{{ post.content }}
-</div>
-<hr>
+        
+        <div class="page-header">
+          <h1><a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a></h1>
+          <p class="lead" datetime="{{ post.date | date: "%d/%m/%Y" }}"><p>Le {{ post.date | date: "%d/%m/%Y" }}</p>
+        </div>
+        <div>
+        {{ post.content }}
+        </div>
+        <hr>
