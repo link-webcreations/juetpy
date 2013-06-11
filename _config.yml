@@ -10,12 +10,12 @@ description:  Blog du Voyage en amérique du sud
 #    Jekyll & Plugins     #
 # ----------------------- #
 
-#permalink:      pretty
-paginate:       5
-paginate_file:  articles.html
-markdown:       rdiscount
-pygments:       true
-exclude:        ["README.md", "CNAME", ".gitignore"]
+#permalink:         pretty
+paginate:           5
+pagination_roots:   ['/articles']
+markdown:           rdiscount
+pygments:           true
+exclude:            ["README.md", "CNAME", ".gitignore"]
 
 # ----------------------- #
 #   3rd Party Settings    #
