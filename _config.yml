@@ -13,7 +13,7 @@ description:  Blog du Voyage en amérique du sud
 paginate:           5
 pagination_roots:   ['/articles']
 markdown:           rdiscount
-exclude:            ["README.md", "CNAME", ".gitignore", ".travis.yml"]
+exclude:            ["README.md", "CNAME", ".gitignore", ".travis.yml", "Makefile"]
 
 # ----------------------- #
 #   3rd Party Settings    #
