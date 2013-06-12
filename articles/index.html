@@ -21,7 +21,11 @@ slug:   articles
 
     <ul class="pager">
         {% if paginator.previous_page %}
+            {% if paginator.previous_page == 1 %}
+        <li class="previous"><a href="{{ site.url }}/articles">&larr; Prédent</a></li>
+            {% else %}
         <li class="previous"><a href="{{ site.url }}/articles/page{{ paginator.previous_page }}">&larr; Précédent</a></li>
+            {% endif %}
         {% else %}
         <li class="previous disabled"><a href="#">&larr; Précédent</a></li>
         {% endif %}
