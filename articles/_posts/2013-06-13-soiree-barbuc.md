@@ -6,6 +6,7 @@ comments: true
 tags:
 - rencontres
 category: soirée
+base_url: "http://link-webcreations.github.io/juetpy/"
 ---
 De belles rencontres
 --------------------
