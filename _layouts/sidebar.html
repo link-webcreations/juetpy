@@ -3,18 +3,20 @@ layout: default
 ---
 
 <div class="row">
-  <div class="col col-lg-3">
+  <div class="col-lg-3">
     <div class="sidebar">
-      <ul class="nav sidenav">
-        {% for post in site.posts %}
-        <li>
-          <a href="{{ site.url }}{{ post.url }}">{{ post.title }}</a>
-        </li>
-        {% endfor %}
+      <ul class="nav">
+        {% if page.slug == "articles" %}
+          {% include nav-articles.html %}
+        {% elsif page.slug == "preparatifs" %}
+          {% include nav-preparatifs.html %}
+        {% elsif page.slug == "galerie" %}
+          {% include nav-galerie.html %}
+        {% endif %}
       </ul>
     </div>
   </div>
-  <div class="col col-lg-9">
+  <div class="col-lg-9">
     {{ content }}
   </div>
 </div><!-- /row (sidebar)-->

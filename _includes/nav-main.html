@@ -4,25 +4,25 @@
 <div class="navbar navbar-fixed-top"  id="top">
 {% endif %}
   <div class="container">
-    <a href="{{ site.url }}/" class="navbar-brand">YOOOO</a>
     <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".nav-collapse">
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
       <span class="icon-bar"></span>
     </button>
+    <a href="{{ page.base_url }}/" class="navbar-brand">YOOOO</a>
     <div class="nav-collapse collapse">
       <ul class="nav navbar-nav">
         <li{% if page.slug == "home" %} class="active"{% endif %}>
-          <a href="{{ site.url }}/">Home</a>
+          <a href="{{ page.base_url }}/">Accueil</a>
+        </li>
+        <li{% if page.slug == "preparatifs" %} class="active"{% endif %}>
+          <a href="{{ page.base_url }}/preparatifs.html">Préparatifs</a>
         </li>
         <li{% if page.slug == "articles" %} class="active"{% endif %}>
-          <a href="{{ site.url }}/articles/">Articles</a>
+          <a href="{{ page.base_url }}/articles/">Articles</a>
         </li>
-        <li{% if page.slug == "about" %} class="active"{% endif %}>
-          <a href="{{ site.url }}/about.html">A propos</a>
-        </li>
-        <li{% if page.slug == "archives" %} class="active"{% endif %}>
-          <a href="{{ site.url }}/archives.html">Archives</a>
+        <li{% if page.slug == "galerie" %} class="active"{% endif %}>
+          <a href="{{ page.base_url }}/galerie.html">Galerie</a>
         </li>
       </ul>
     </div>

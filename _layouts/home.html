@@ -1,10 +1,21 @@
-{% include header.html %}
-<body>
-{{ content }}
-  
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    {% include header.html %}
+  </head>
+  <body>
 
-{% include js.html %}
-{% include google_analytics.html %}
-</body>
+    {{ content }}
+
+    <!-- Footer
+    ================================================== -->
+    <footer class="footer">
+      <div class="container">
+        <p>Made with love by <a href="http://link-webcreations.fr">Yves</a>.</p>
+      </div>
+    </footer>
+
+    {% include footer.html %}
+
+  </body>
 </html>
