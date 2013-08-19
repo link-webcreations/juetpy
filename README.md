@@ -23,4 +23,4 @@ Uploader une photo : http://juetpy.link-webcreations.fr/upload
 Site :
 ------
 
-http://link-webcreations.github.io/juetpy/
+http://juetpy.fr
