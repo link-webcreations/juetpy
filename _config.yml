@@ -4,6 +4,7 @@
 url:          jusetpy.fr
 author:       Yves ANDOLFATTO
 description:  Blog du voyage en amérique du sud
+permalink:    pretty
 
 # ----------------------- #
 #    Jekyll & Plugins     #
