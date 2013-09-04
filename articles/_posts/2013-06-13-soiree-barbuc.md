@@ -1,5 +1,6 @@
 ---
 title:    Une soirée bien arrosée
+slug:     articles
 layout:   post
 excerpt:  Soirée autours d'un feu, avec de belles rencontres !
 comments: true
