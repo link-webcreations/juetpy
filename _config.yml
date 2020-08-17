@@ -12,7 +12,7 @@ description:  Blog du voyage en amérique du sud
 paginate:           5
 pagination_roots:   ['/articles']
 markdown:           rdiscount
-exclude:            ["README.md", "CNAME"]
+exclude:            ["README.md", "CNAME", "Gemfile"]
 gallery:
     dir:            photos
     title:          "PhotosTiiiiitre"
